@@ -40,14 +40,30 @@
 
 # Name length fun
 
-puts "Please tell me your name again, just for fun"
+# puts "Please tell me your name again, just for fun"
+#
+# nom = gets.chomp
+#
+# if nom.size > 5
+#   puts "Hi #{nom}, your name is longer than 5 characters"
+# elsif nom.size < 5
+#   puts "Hi #{nom}, your name is less than 5 characters"
+# else
+#   puts "Hi #{nom}, congratulations! Your name is exactly 5 characters"
+# end
 
-nom = gets.chomp
+# Secret number wooooooo
 
-if nom.size > 5
-  puts "Hi #{nom}, your name is longer than 5 characters"
-elsif nom.size < 5
-  puts "Hi #{nom}, your name is less than 5 characters"
+lucky = 33
+
+puts "Test your intuition, please give me a number"
+
+ticket = gets.to_i
+
+if ticket  == lucky
+  puts "You win!"
+elsif (ticket == lucky + 1) || (ticket == lucky - 1)
+  puts "Oh so close!"
 else
-  puts "Hi #{nom}, congratulations! Your name is exactly 5 characters"
+  puts "Try again!"
 end

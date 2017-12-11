@@ -24,16 +24,30 @@
 
 # Same same name
 
-realname = "danny"
+# realname = "danny"
+#
+# puts "Please give me your name!"
+#
+# name = gets.chomp
+#
+# puts name
+#
+# if name == realname
+#   puts "No way! We have the same name!"
+# else
+#   puts "This is a decent kind of name"
+# end
 
-puts "Please give me your name!"
+# Name length fun
 
-name = gets.chomp
+puts "Please tell me your name again, just for fun"
 
-puts name
+nom = gets.chomp
 
-if name == realname
-  puts "No way! We have the same name!"
+if nom.size > 5
+  puts "Hi #{nom}, your name is longer than 5 characters"
+elsif nom.size < 5
+  puts "Hi #{nom}, your name is less than 5 characters"
 else
-  puts "This is a decent kind of name"
+  puts "Hi #{nom}, congratulations! Your name is exactly 5 characters"
 end
